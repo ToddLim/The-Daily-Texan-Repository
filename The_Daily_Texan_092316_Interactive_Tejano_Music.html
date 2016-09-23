@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <!-- don't mess with this -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE THE TITLE FROM "FEATURE" TO YOUR TITLE-->
+		<title>Tejano Music Special Project | The Daily Texan</title> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i|Roboto:400,400i,500,500i" rel="stylesheet">
+		<link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=www.dailytexanonline.com">
+    <!-- inlined stylesheet -->
+    <style>
+	html, body {
+	overflow-x: hidden;
+	}
+    /* globals */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Merriweather, Georgia, serif;
+      }
+	img {
+		width: 100%
+		height: auto;
+	}
+      p, a, li, ul, span {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      /* navigation */
+      .navbar {
+        background: #cc5527;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.025), 0 1px 2px rgba(0,0,0,0.07);
+        display: flex;
+        align-content: center;
+        margin-bottom: 0 !important;
+      }
+      .navbar-brand {
+        color: #fff !important;
+        font-family: Merriweather, Georgia, serif;
+        margin-left: 0 !important;
+        text-align: center;
+        width: 100%;
+      }
+      .navbar-brand:hover {
+        text-decoration: underline;
+      }
+      /* main page content */
+      div.row.header {
+        margin-top: 1em;
+      }
+      div.header > div.col-md-8, .credits > div.col-md-8 {
+        padding: 0;
+        padding-bottom: 1em;
+      }
+      h1#headline {
+        font-size: 3em;
+      }
+      p.byline {
+        font-size: 1em;
+	padding: 0;
+        font-style: italic;
+      }
+	.byline.small {
+	font-size: .8em; 
+	width: 100%; 
+	text-align: left; 
+	}
+      .sharer {
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+      }
+      .sharer > a {
+        text-decoration: none !important;
+      }
+      #fb-share, #twitter-share {
+        margin: 0 .5em 0 .5em;
+      }
+      #fb-share {
+        background:#3b5998;
+        border-radius: 3px;
+        color: #fff;
+        margin-left: 0;
+        padding: .1em .6em .1em .6em;
+      }
+      #fb-share:hover {
+        background: #6d84b4;
+      }
+      #twitter-share {
+        background:#00aced;
+        border-radius: 3px;
+        color: #fff;
+        margin-left: 0;
+        padding: .1em .6em .1em .6em;
+      }
+      #twitter-share:hover {
+        background: #07bbff;
+      }
+      #fb-share > span, #twitter-share > span {
+        font-size: 1.25rem;
+        margin-left: .25em;
+      }
+      .main-content-container {
+        margin-bottom: 2em;
+      }
+      #main {
+        border-top: 1px solid lightgray;
+        padding: 1em 0;
+      }
+      /* credits */
+      .credits {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      /* footer */
+      footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      .footer-txt {
+        font-size: 1em;
+        text-align: center;
+      }
+      /* RESPONSIVE DESIGN */
+      @media (max-width: 768px) {
+        div.row.header {
+          margin-top: 0;
+        }
+        div.row {
+          padding: 0 2em;
+        }
+	div.stories {
+		flex-direction: column !important;
+	}
+	div.story-container {
+		width: 100% !important; 
+		margin: 1em 0 1em 0 !important; 
+	}
+	.stories {
+		display: flex; 
+		flex-direction: row; 
+		justify-content: space-around; 
+		align-content: space-around; 
+      }
+	.story-container {
+		display: flex; 
+		flex-direction: column; 
+		-ms-align-items: center; 
+		align-items: center; 
+		align-content: center; 
+		justify-content: space-around; 
+		margin: 0 1em 0; 
+		width: 33%; 
+		border-radius: 5px; 
+		border: 1px solid lightgray; 
+	}
+	.story-container > a, p {
+		padding: 0 1em 0; 
+	}
+	.story-container > p.byline {
+		padding: 0 1em 0; 
+	}
+    </style>
+	</head>
+	<body>
+    <!-- navigation bar -->
+		<nav class="navbar navbar-default topnav" id="navi" style="z-index: 5000;">
+			<div class="container-fluid">
+					<a class="navbar-brand" href="http://www.dailytexanonline.com">The Daily Texan</a>
+			</div>
+		</nav>
+    <!-- main content -->
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-md-2" aria-label="padding"></div>
+        <div class="col-md-8">
+          <h1 id="headline">Tejano Music Special Project</h1>
+          <p class="byline">By <a href="https://www.dailytexanonline.com/author/elizabeth-hlavinka">Elizabeth Hlavinka</a>, <a href="https://www.dailytexanonline.com/author/katie-walsh">Katie Walsh</a>, <a href="https://www.dailytexanonline.com/author/cat-cardenas">Cat Cardenas</a> and <a href="https://www.dailytexanonline.com/author/morgan-ohanlon">Morgan O'Hanlon</a></p> <!-- CHANGE the URLs and names -->
+        <p class="byline">Interactive by Todd Raschen Lim</p>  
+	<div class="sharer">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.dailytexanonline.com/features/tejano_music_special_project.html" target="_blank"> <!-- change the URL to your feature URL -->
+              <div id="fb-share">
+                <i class="fa fa-facebook-square" aria-hidden="false"></i>
+                <span>Facebook</span>
+              </div>
+            </a>
+            <a href="https://twitter.com/home?status=Explore our stories on Tejano music!" target="_blank"> <!-- add the tweet you want to write after ?status= -->
+              <div id="twitter-share">
+                <i class="fa fa-twitter-square" aria-hidden="false"></i>
+                <span>Twitter</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2" aria-label="padding"></div>
+      </div>
+      <div class="row main-content-container">
+        <div class="col-md-2" aria-label="padding"></div>
+        <div class="col-md-8 main" id="main">
+		<img src="https://i.imgur.com/BfUxBZR.jpg" alt="Illustration by Geovanni Casillas"> <!--Change illos-->
+         <p class="byline small">Illustration by Geovanni Casillas</p> <!--Change byline-->
+	 <div class="stories">
+	 <div class="story-container">
+	   <a href="https://www.dailytexanonline.com/2016/09/23/father-son-duo-recall-rise-fall-of-tejano-music-in-austin"> <!--Change link-->
+	<h3 class="headline">Father-son duo recall rise, fall of Tejano music in Austin</h3>
+	</a>
+	<img
+src="https://www.dailytexanonline.com/sites/default/files/styles/article_main_image/public/images/2016/09/2016-09-22_Tejano_Music_Dad_And_Son.Karen_.Pinilla20077.jpg?itok=h5tXOTiq" alt="Marcelo Tafoya and his son, Tony"> 
+	<p class="byline small">By Elizabeth Hlavinka, Katie Walsh</p>
+	</div>
+	<div class="story-container">
+	<a href="https://www.dailytexanonline.com/2016/09/23/singer-keeps-selenas-memory-alive-through-performing">
+	<h3 class="headline">Singer keeps Selena's memory alive through performing</h3>
+	 </a>
+	<img
+src="https://www.dailytexanonline.com/sites/default/files/styles/article_main_image/public/images/2016/09/0923_LexiAcevedo_illo056.jpg?itok=oDFp3KoT" alt="Illustration of Stephanie Bergara">
+	<p class="byline small">By Cat Cardenas</p>
+	</div>
+	<div class="story-container">
+	 <a href="https://www.dailytexanonline.com/2016/09/23/local-tejano-musicians-discuss-austin%E2%80%99s-underground-scene">
+	<h3 class="headline">Local Tejano musicians discuss Austin's underground scene</h3>
+	 </a>
+	<img
+src="https://www.dailytexanonline.com/sites/default/files/styles/article_main_image/public/images/2016/09/Selena%20Cover%20Band_court%20of%20Eric%20Celedon.jpg?itok=_WDFsvQ6" alt="Local Tejano musicians pose for picture">
+	<p class="byline small">By Morgan O'Hanlon</p>
+	 </div>
+	  </div>
+	   </div>
+	<div class="col-md-2" aria-label="padding"></div>
+	 </div>
+	<div class="row credits">
+	<div class="col-md-2" aria-label="padding"></div>
+	 <div class="col-md-8">
+	<h3 class="contrib">Contributors</h3>
+	<!-- change contributors as necessary -->
+	<p class="contrib-txt">By Elizabeth Hlavinka, Katie Walsh, Cat Cardenas and Morgan O'Hanlon</p>
+	<p class="contrib-txt">Interactive by Todd Raschen Lim</p> <!-- CHANGE THE PART AFTER "/author/" and the author name, or add multiple authors in the By x, y and z format-->
+	</div>
+	<div class="col-md-2" aria-label="padding"></div>
+	</div>
+	<!--footer-->
+	<footer>
+	 <div class="footer">
+	 <div class="container">
+	  <p class="footer-txt">Created by <a href="http://www.dailytexanonline.com">The Daily Texan</a>
+	</div>
+	 </div>
+	</footer>
+	 </div>
+	</body>
+</html>
